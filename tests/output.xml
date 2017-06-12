@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170612 11:56:54.471" generator="Robot 3.0.1 (Python 2.7.10 on darwin)">
+<suite source="/Users/isha/eficode/training/robot-framework-template/tests" id="s1" name="Tests">
+<suite source="/Users/isha/eficode/training/robot-framework-template/tests/example.robot" id="s1-s1" name="Example">
+<test id="s1-s1-t1" name="Example test">
+<kw name="Local keyword">
+<doc>Keywords should only be promoted to resource file when</doc>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" endtime="20170612 11:56:54.497" starttime="20170612 11:56:54.497"></status>
+</kw>
+<status status="PASS" endtime="20170612 11:56:54.497" starttime="20170612 11:56:54.497"></status>
+</kw>
+<kw name="Shared keyword">
+<msg timestamp="20170612 11:56:54.499" level="FAIL">No keyword with name 'Shared keyword' found.</msg>
+<status status="FAIL" endtime="20170612 11:56:54.499" starttime="20170612 11:56:54.499"></status>
+</kw>
+<status status="FAIL" endtime="20170612 11:56:54.499" critical="yes" starttime="20170612 11:56:54.496">No keyword with name 'Shared keyword' found.</status>
+</test>
+<status status="FAIL" endtime="20170612 11:56:54.499" starttime="20170612 11:56:54.494"></status>
+</suite>
+<suite source="/Users/isha/eficode/training/robot-framework-template/tests/invalid_login.robot" id="s1-s2" name="Invalid Login">
+<kw type="setup" name="Open Browser To Login Page">
+<msg timestamp="20170612 11:56:54.503" level="FAIL">No keyword with name 'Open Browser To Login Page' found.</msg>
+<status status="FAIL" endtime="20170612 11:56:54.503" starttime="20170612 11:56:54.503"></status>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<status status="FAIL" endtime="20170612 11:56:54.503" critical="yes" starttime="20170612 11:56:54.503">Parent suite setup failed:
+No keyword with name 'Open Browser To Login Page' found.</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<status status="FAIL" endtime="20170612 11:56:54.504" critical="yes" starttime="20170612 11:56:54.504">Parent suite setup failed:
+No keyword with name 'Open Browser To Login Page' found.</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<status status="FAIL" endtime="20170612 11:56:54.504" critical="yes" starttime="20170612 11:56:54.504">Parent suite setup failed:
+No keyword with name 'Open Browser To Login Page' found.</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<status status="FAIL" endtime="20170612 11:56:54.505" critical="yes" starttime="20170612 11:56:54.505">Parent suite setup failed:
+No keyword with name 'Open Browser To Login Page' found.</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<status status="FAIL" endtime="20170612 11:56:54.506" critical="yes" starttime="20170612 11:56:54.505">Parent suite setup failed:
+No keyword with name 'Open Browser To Login Page' found.</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<status status="FAIL" endtime="20170612 11:56:54.506" critical="yes" starttime="20170612 11:56:54.506">Parent suite setup failed:
+No keyword with name 'Open Browser To Login Page' found.</status>
+</test>
+<kw type="teardown" name="Close Browser">
+<msg timestamp="20170612 11:56:54.508" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" endtime="20170612 11:56:54.508" starttime="20170612 11:56:54.508">No keyword with name 'Close Browser' found.</status>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" endtime="20170612 11:56:54.508" starttime="20170612 11:56:54.500">Suite setup failed:
+No keyword with name 'Open Browser To Login Page' found.
+
+Also suite teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</suite>
+<suite source="/Users/isha/eficode/training/robot-framework-template/tests/valid_login.robot" id="s1-s3" name="Valid Login">
+<test id="s1-s3-t1" name="Valid Login">
+<kw name="Open Browser To Login Page">
+<msg timestamp="20170612 11:56:54.512" level="FAIL">No keyword with name 'Open Browser To Login Page' found.</msg>
+<status status="FAIL" endtime="20170612 11:56:54.512" starttime="20170612 11:56:54.512"></status>
+</kw>
+<kw type="teardown" name="Close Browser">
+<msg timestamp="20170612 11:56:54.513" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" endtime="20170612 11:56:54.513" starttime="20170612 11:56:54.513">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" endtime="20170612 11:56:54.514" critical="yes" starttime="20170612 11:56:54.510">No keyword with name 'Open Browser To Login Page' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20170612 11:56:54.514" starttime="20170612 11:56:54.509"></status>
+</suite>
+<status status="FAIL" endtime="20170612 11:56:54.515" starttime="20170612 11:56:54.474"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="8" pass="0">Critical Tests</stat>
+<stat fail="8" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="8" id="s1" name="Tests" pass="0">Tests</stat>
+<stat fail="1" id="s1-s1" name="Example" pass="0">Tests.Example</stat>
+<stat fail="6" id="s1-s2" name="Invalid Login" pass="0">Tests.Invalid Login</stat>
+<stat fail="1" id="s1-s3" name="Valid Login" pass="0">Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170612 11:56:54.496" level="ERROR">Error in file '/Users/isha/eficode/training/robot-framework-template/tests/example.robot': Replacing variables from setting 'Resource' failed: Variable '${PROJECTROOT}' not found.</msg>
+<msg timestamp="20170612 11:56:54.501" level="ERROR">Error in file '/Users/isha/eficode/training/robot-framework-template/tests/invalid_login.robot': Replacing variables from setting 'Resource' failed: Variable '${PROJECTROOT}' not found.</msg>
+<msg timestamp="20170612 11:56:54.510" level="ERROR">Error in file '/Users/isha/eficode/training/robot-framework-template/tests/valid_login.robot': Replacing variables from setting 'Resource' failed: Variable '${PROJECTROOT}' not found.</msg>
+</errors>
+</robot>
